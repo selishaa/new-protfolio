@@ -20,7 +20,8 @@
 .skills-container {
     display: flex;
     justify-content: center;
-  }
+
+}
   
   .skills-list {
     list-style-type: none;
@@ -42,7 +43,15 @@
   }
   
   
-  
+  .skills-box {
+    padding: 20px;
+    border: 2px solid #d8e2f9 ;
+    border-radius: 8px;
+    background-color: #bbd0ff ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 130px;
+    margin-bottom: 50px;
+  }
   
   .skill-item:hover {
     background: rgb(228, 50, 50);

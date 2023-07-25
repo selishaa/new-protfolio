@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="mainstyle.css">
     <link rel="stylesheet" href="skills.css">
     <link rel="stylesheet" href="gradient.css">
-    
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
@@ -24,8 +28,8 @@
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Experience</a></li>
+                    <li><a href="/">About </a></li>
+                    <li><a href="/">Skills</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">Contact Me</a></li>
                 </ul>
@@ -43,90 +47,257 @@
                 <img src="bg.png" alt=""> </img>
 
             </div>
+            <canvas id="gradient-canvas"></canvas>
 
-            <canvas id="gradient-canvas">
-            </canvas>
+
+
 
 
         </section>
         <hr>
         <section class="secondSection bigcontainer">
-            <div class="container"> 
-            <span class="text-grey">What I have done so far</span>
-            <p class="mainheader"> WORK EXPERIENCE</p>
-
-            <div class="box"></div>
-            <div class="vertical">
-                <img class="image-top" src="python.png" alt="">
-                <div class="vertical-title">
-                    Teaching Assistant
+            <div class="container">
+                <div class="about-box">
+                    <div class="about-row">
+                        <div class="about-col-1">
+                            <img src="user.png">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>
+                                I am a sophomore majoring in Computer Science at Northern Kentucky University. My passion
+                                for
+                                technology and its potential to transform the world has driven me to pursue a career in this
+                                field. As a motivated and innovative student, I strive to make a positive impact by
+                                leveraging
+                                my skills in computer science. I am eager to contribute to a dynamic and challenging work
+                                environment.
+                            </p>
+                            <div class="tab-titles">
+    
+                                <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+    
+                            <div class="tab-contents active-tab" id="experience">
+                                <ul>
+                                    <li><span>Aug 2022-Dec 2022</span><br>Teaching Assistant</li>
+                                    <li><span>May 2020-Aug 2020</span><br>Research Assistant</li>
+                                    <li><span>Aug 2020-Jan 2021</span><br>Software Developer Intern</li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2022-Current</span><br>Northern Kentucky University</li>
+                                    <li><span>2018-2021</span><br>Golden Gate International College</li>
+                                    <li><span>2005-2018</span><br>The New Summit H.S.School</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="vertical-desc">
-                    Assisted the professor in teaching & analyzing a class of 25 students by conducting interactive
-                    coding sessions in Python.Enhanced students in coding concepts and debugging techniques with an
-                    increase in grade by one letter.
-
                 </div>
-            </div>
-            <div class="vertical1">
-                <img class="image-top" src="face.png" alt="">
-                <div class="vertical-title1"> Research Assistant</div>
-                <div class="vertical-desc1">
-                    Worked with STEM professors to research challenges of Facial Recognization using Python and LDA for
-                    data analysis.Achieved 20% significant accurancy improvement using machine learning & statical
-                    analysis.
+    
                 </div>
-
-            </div>
-            <div class="vertical2">
-                <img class="image-top" src="tech.png" alt="">
-                <div class="vertical-title2"> SDE BloomEd Intern</div>
-                <div class="vertical-desc2">Led API development in BloomEd, leveraging a diverse tech stack including
-                    Java, HTML/CSS and JavaScript.Played vital role in optimizing backend processes,reducing data
-                    retrival timeby 25% </div>
-
-
                 </div>
+              
 
         </section>
         <section class="bigcontainer">
             <section class="container">
-                <p class="mainheader"> Skills</p>
-                <ul class="skills-list">
-                    <li class="skill-item fadein fadein">Node.js</li>
-                    <li class="skill-item fadein">Python</li>
-                    <li class="skill-item fadein">JavaScript</li>
-                    <li class="skill-item fadein">Java</li>
-                    <li class="skill-item fadein">TypeScript</li>
-                    <li class="skill-item fadein">HTML/CSS</li>
-                    <li class="skill-item fadein">SQL</li>
-                    <li class="skill-item fadein">React.js</li>
-                    <li class="skill-item fadein">MongoDB</li>
-                    <li class="skill-item fadein">PostgreSQL</li>
-                    <li class="skill-item fadein">Next.js</li>
-                    <li class="skill-item fadein">Redux</li>
-                    <li class="skill-item fadein">Express.js</li>
-                    <li class="skill-item fadein">Flask</li>
-                    <li class="skill-item fadein">Git/GitHub</li>
-                    <li class="skill-item fadein">Unix/Linux/Bash</li>
-                  </ul>
+                <div class="skills-box">
+                    <p class="mainheader"> Skills</p>
+                    <ul class="skills-list">
+                        <li class="skill-item fadein fadein">Node.js</li>
+                        <li class="skill-item fadein">Python</li>
+                        <li class="skill-item fadein">JavaScript</li>
+                        <li class="skill-item fadein">Java</li>
+                        <li class="skill-item fadein">TypeScript</li>
+                        <li class="skill-item fadein">HTML/CSS</li>
+                        <li class="skill-item fadein">SQL</li>
+                        <li class="skill-item fadein">React.js</li>
+                        <li class="skill-item fadein">MongoDB</li>
+                        <li class="skill-item fadein">PostgreSQL</li>
+                        <li class="skill-item fadein">Next.js</li>
+                        <li class="skill-item fadein">Redux</li>
+                        <li class="skill-item fadein">Express.js</li>
+                        <li class="skill-item fadein">Flask</li>
+                        <li class="skill-item fadein">Git/GitHub</li>
+                        <li class="skill-item fadein">Unix/Linux/Bash</li>
+                    </ul>
+                </div>
+                <div id="goprojects"></div>
+
+                <section class="projects fadein" id="projects">
+                    <div class="bigContainer">
+                        <div class="Container">
+                            <div class="project-box">
+                                <span class="topHeader"> Projects</span>
+
+                                <div class="projectContainer">
+                                    <div class="project fadein">
+                                        <p class="title">The NewsChronicle</p>
+
+                                        <p class="paragraph">
+                                            Developed a dynamic online news portal with RESTful APIs & enhanced user
+                                            engagement with
+                                            UI/UX design & JavaScript.
+                                        </p>
+                                        <p class="languages">
+                                            <span>React.js</span>
+                                            <span>Node.js</span>
+                                            <span>MangoDB</span>
+                                        </p>
+                                        <div class="link">
+                                            <a href="https://github.com/selishaa/NewsChronicle.git">
+                                                <img src="github.png" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="project fadein">
+                                        <p class="title">MelodyMuse</p>
+
+                                        <p class="paragraph">
+                                            Developed a song recommendation site analyzing Spotify API,
+                                            music metadata for recommendation algorithms for suggestion.
+                                        </p>
+                                        <p class="languages">
+                                            <span>Machine Learning</span>
+                                            <span>Django</span>
+                                            <span>Tensorflow</span>
+                                        </p>
+                                        <div class="link">
+                                            <a href="https://github.com/selishaa/MelodyMuse.git">
+                                                <img src="github.png" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="projectContainer">
+                                    <div class="project fadein">
+                                        <p class="title">Translator Bot</p>
+
+                                        <p class="paragraph">
+                                            Developed an translating bot in Python using asynchronous processing
+                                            & also utilized user friendly interface serving 1000 of users.
+                                        </p>
+                                        <p class="languages">
+                                            <span>Flask</span>
+                                            <span>Python</span>
+                                            <span>Translation API</span>
+                                        </p>
+                                        <div class="link">
+                                            <a href="https://github.com/selishaa/Translator-Bot.git">
+                                                <img src="github.png" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="project fadein">
+                                        <p class="title">Omino Food Project</p>
+
+                                        <p class="paragraph">
+                                            Developed a full-stack web application that generates summaries
+                                            for recipes with considering diet plan
+                                            using React & OpenAIs GPT-3 API.
+
+                                        </p>
+                                        <p class="languages">
+                                            <span>React</span>
+                                            <span>Django</span>
+                                            <span>JavaScript</span>
+                                        </p>
+                                        <div class="link">
+                                            <a href="https://github.com/selishaa/OmnimoFood.git">
+                                                <img src="github.png" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
 
             </section>
         </section>
+
+
+        <div id="contact">
+            <section class="bigcontainer">
+                <section class="container">
+                    <div class="project-box">
+                        <div class="row">
+                            <div class="contact-left">
+                                <h1 class="sub-title">Contact Me</h1>
+                                <p><i class="fas fa-paper-plane"></i>selishathapa5@gmail.com</p>
+                                <p><i class="fas fa-phone-square-alt"></i>2145164068</p>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/selisha.thapa.1"><i
+                                            class="fab fa-facebook"></i></a>
+                                    <a href="https://twitter.com/selisha_thapa"><i
+                                            class="fab fa-twitter-square"></i></a>
+                                    <a href="https://www.instagram.com/_sselishaaa/"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/selisha-thapa/"><i
+                                            class="fab fa-linkedin"></i></a>
+                                            <a href="https://github.com/selishaa"><i
+                                                class="fab fa-github"></i></a>
+                                </div>
+                                <a href="https://docs.google.com/document/d/1mhhkiCJtK-5mhzDJeZn8qTv87IpRrqV2-SRq-mSL2PQ/edit#bookmark=id.gjdgxs"
+                                    class="btn btn2">Resume</a>
+
+                            </div>
+                            <div class="contact-right">
+                                <form>
+                                    <input type="text" name="Name" placeholder="Your Name" required>
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                    <button type="submit" class="btn btn2">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </section>
+        </div>
+           
+       
+
+
+
     </main>
     <footer>
         <div class="footer">
             <div class="footer-first">
-                <h3>Selisha's Portfolio</h3>
+                <h3>Copyright@2023 Selisha Thapa. All rights reserved</h3>
             </div>
             <div class="footer-second"></div>
             <div class="footer-third"></div>
             <div class="footer- fourth"></div>
         </div>
     </footer>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-     <script src="gradient.js"></script>
+    <script src="gradient.js"></script>
     <script>
         var typed = new Typed('#element', {
             strings: ['<i>Programmer</i> .', '&amp; Web Developer.'],
