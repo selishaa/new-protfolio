@@ -45,6 +45,11 @@ nav ul li {
     margin: 0 23px;
     font-size: 1.1rem;
 }
+.logo{
+    width: auto;
+    
+   
+}
 
 nav ul li a {
     text-decoration: none;
