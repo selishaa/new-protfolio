@@ -117,3 +117,19 @@ form .btn2{
 .btn:hover{
     background: #ff004f;
 }
+
+@media screen and (max-width: 480px) {
+    .formmContainer {
+      padding: 30px;
+    }
+  
+    .contactLabel,
+    .contactInput,
+    .formButton {
+      font-size: 18px;
+    }
+  
+    .buttonDiv {
+      text-align: center;
+    }
+  }

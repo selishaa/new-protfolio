@@ -33,23 +33,22 @@ nav {
     height: 90px;
     background-color: #abb5fc;
 }
+.logo{
+    margin-left: -200px;
+}
 
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 
 }
 
 nav ul li {
     list-style: none;
-    margin: 0 23px;
+    margin: 0 15px;
     font-size: 1.1rem;
 }
-.logo{
-    width: auto;
-    
-   
-}
+
 
 nav ul li a {
     text-decoration: none;
@@ -155,7 +154,7 @@ main hr {
     border-radius: 8px;
     background-color: #bbd0ff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 190px; /* Adjust the top margin to move the box down */
+    margin-top: 100px; /* Adjust the top margin to move the box down */
    margin-bottom: auto;
     
 }
@@ -178,18 +177,41 @@ main hr {
     justify-content: flex-end;
     align-items: flex-start; 
     margin-top: -5px;
+    overflow-x: auto; /* Add this line to enable horizontal scrolling */
+  
 }
 
 .about-col-1 img {
   width: 105%; 
   height: 520px;
   
+  
 }
-
+.Container{
+    width: 500px;
+    height: 535px;
+    display: flex;
+    margin: 0 auto;
+    .Box{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        width: 100%;
+        .card{
+            width: 90%;
+            height: 130px;
+            flex: 0 0 auto;
+            cursor: pointer;
+        }
+    }
+}
+   
 .about-col-2 {
   flex: 0 0 60%; 
   flex-basis: 50%;
 }
+
+
 .about-col-2 p {
     font-size: 15px; 
 }
@@ -200,6 +222,7 @@ main hr {
     
 
 }
+
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -280,3 +303,42 @@ footer {
     font-weight: 200;
     font-family: 'Ubuntu', sans-serif;
 }
+
+.fadein {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translate(0, 100px);
+  }
+  
+  .fadein.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  
+
+
+
+
+@media screen and (max-width: 480px) {
+    .bgSection {
+       
+        height: 844px;
+   
+      }
+
+      .break{
+        display: block;
+      }
+
+      #result2{
+        display: none;
+      }
+    
+
+
+  }
+
+
+
+
+ 

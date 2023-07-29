@@ -48,6 +48,7 @@
     font-size: 1.3rem;
     color: #666;
     line-height: 1.5;
+    
   }
   
   
@@ -74,7 +75,7 @@
     border-radius: 8px;
     background-color: #bbd0ff ;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
+    margin-top: 90px;
     margin-bottom: 50px;
   }
   
@@ -94,13 +95,15 @@
     font-family: Arial, sans-serif;
     font-size: 1rem;
     color: #333;
+    border: 1px solid #f90c0cdd;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Added 'transform' property */
   }
 
   .languages span:hover{
-    background: rgb(228, 50, 50);
+    background: rgb(88, 93, 237);
     color: white;
     cursor: pointer;
+    border: 1px solid #f90c0cdd;
     transform: translateY(-3px); /* Added upward movement */
     }
 
